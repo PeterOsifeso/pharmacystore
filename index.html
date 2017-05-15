@@ -1,122 +1,121 @@
 <!DOCTYPE html >
 <html  lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-            <meta charset="utf-8">
-            <title>Joshua-Chris Pharmacy Store</title>
-            <link rel="stylesheet" type="text/css" href="style.css"/>
-            <script type="text/javascript" src="default.js"></script>
-            <style>
-            .mySlides {display:none;}
-            </style>
-            </head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+      <title>Joshua-Chris Pharmacy Store</title>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <script type="text/javascript" src="default.js"></script>
+      <style>
+          .mySlides {display:none;}
+      </style>
+</head>
             
-            <body>
-            <div>
-            <header>
-            <h1>Joshua-Chris Pharmacy Store, Motto: Care For The Society</h1>
-            </header>
-            <nav>
-              <ul class="menu">
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="aboutus.html">About Us</a></li>
-                   <li><a href="infoservice.html">Info / Services</a></li>
-                   <li><a href="contactus.html">Contact Us</a></li>
-                 </ul>
-            </nav>
-            
-            <div>
-      <img class="mySlides" src="images/banner.jpg"/>
-      <img class="mySlides" src="images/eight.jpg"/>
-       <img class="mySlides" src="images/seven.jpg" >
-      <img class="mySlides" src="images/one.jpg" >
-      <img class="mySlides" src="images/two.jpg" >
-      <img class="mySlides" src="images/three.jpg" >
-      <img class="mySlides" src="images/four.jpg" >
-      <img class="mySlides" src="images/five.jpg" >
-      <img class="mySlides" src="images/six.jpg" >
+<body>
+      <div class="container">            
+        <div>
+          <header class="header row">
+              <a href="index.html" class="logo" style="background: none;"><img src="images/phlogo.png"></a>
+
+              <div class="menubar">
+                <h3 class="menuoption"><a href="#" style="background: white; color: black; margin-right: 5%;">Home</a></h3>
+                <h3 class="menuoption"><a href="#" style="margin-right: 5%;">Services</a></h3>
+                <h3 class="menuoption"><a href="#" style="margin-right: 5%;">About US</a></h3>
+                <h3 class="menuoption"><a href="#" style="margin-right: 5%;">Contact Us</a></h3>
+              </div>
+          </header>
+          <section class="slider">
+            <img class="mySlides" src="images/1.jpg"/>
+            <img class="mySlides" src="images/2.jpg"/>
+            <img class="mySlides" src="images/3.jpg" >
+            <img class="mySlides" src="images/one.jpg" >
+            <img class="mySlides" src="images/two.jpg" >
+            <img class="mySlides" src="images/three.jpg" >
+            <img class="mySlides" src="images/four.jpg" >
+            <img class="mySlides" src="images/five.jpg" >
+            <img class="mySlides" src="images/six.jpg" >
+          </section>
+        </div>
     
-    </div>
+        <script>
+          var myIndex = 0;
+          carousel();
     
-    <script>
-    var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-    </script> 
-    <article>
-                  <h2>About Joshua-Chris Pharmacy Store.</h2>
-            <p>  Pharmacy Store  was launched in late 2012. Based in Limerick, we have become one of the leading online chemists in Ohrid. We specialise in treatments for common conditions and offer a fast, efficient and knowledgeable service.
-    We pride ourselves on being there for, not just your needs, but also those of your whole household. So, if you’re managing the wellbeing of your partner, children or elderly relative you’ve come to the right place. Pharmacy Store  offers competitive prices and speedy, discreet delivery on all leading brands including over the counter medicines .</p>
-              <p> We deliver medicines, Health and Beauty products within Macdonia, aiming to despatch as quickly as possible. We focus on providing the best value and the best customer service. Getting the best value is crucial and at Pharmacy Store Ireland you’ll get everything at the best possible prices, which means you’ll find great savings on well-known High Street brands and over the counter remedies.</p>
-                <p>We have over 3,500 products currently available for sale online providing you with access 24/7. We are always at arm’s length, on your desktop or smartphone and our simple ordering system fits around your lifestyle.
-    Our trained staff are helpful, friendly and an integral part of the team. We provide a discreet service and ship all orders in plain packaging. We provide excellent after-sales service and will keep you informed of your order status from beginning to end. We take our responsibilities as an online Pharmacy seriously, and won’t share your details with anyone else and won’t send you any unsolicited mail or email. </p>
-          <p> Our site uses 3D secure, and payments are processed by Realex Payments, which means that your credit card details are 100% secure. You can also use PayPal to complete your transaction.
-    Whatever your medical condition or need, we are here to help you. </p>
-    
-      </article>
-    
-    <section>
-    <span><p> VIDEO ABOUT LEVEL OF SUGAR IN THE BRAIN</p></span>
-      <video width="800" height="400" controls> 
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 20000); // Change image every 2 seconds
+          }
+        </script> 
       
-    <source src="media/sugar.mp4" />
-      </video>
+      <article class="aboutus">
+        <h2>Welcome</h2>
+        <hr>
+        <p>Pharmacy Store  was launched in late 2012. Based in Limerick, we have become one of the leading online chemists in Ohrid. We specialise in treatments for common conditions and offer a fast, efficient and knowledgeable service.
+        We pride ourselves on being there for, not just your needs, but also those of your whole household. So, if you’re managing the wellbeing of your partner, children or elderly relative you’ve come to the right place. Pharmacy Store  offers competitive prices and speedy, discreet delivery on all leading brands including over the counter medicines .
+        </p>
+        
+        <p> We deliver medicines, Health and Beauty products within Macdonia, aiming to despatch as quickly as possible. We focus on providing the best value and the best customer service. Getting the best value is crucial and at Pharmacy Store Ireland you’ll get everything at the best possible prices, which means you’ll find great savings on well-known High Street brands and over the counter remedies.
+        </p>
+        <p>We have over 3,500 products currently available for sale online providing you with access 24/7. We are always at  arm’s length, on your desktop or smartphone and our simple ordering system fits around your lifestyle.
+          Our trained staff are helpful, friendly and an integral part of the team. We provide a discreet service and ship all orders in plain packaging. We provide excellent after-sales service and will keep you informed of your order status from beginning to end. We take our responsibilities as an online Pharmacy seriously, and won’t share your details with anyone else and won’t send you any unsolicited mail or email. 
+        </p>
+        <p> Our site uses 3D secure, and payments are processed by Realex Payments, which means that your credit card details are 100% secure. You can also use PayPal to complete your transaction.
+          Whatever your medical condition or need, we are here to help you. 
+        </p>
+    
+        </article>
+    
+        <!-- <section>
+          <span><p> VIDEO ABOUT LEVEL OF SUGAR IN THE BRAIN</p></span>
+          <video width="800" height="400" controls> 
+            <source src="media/sugar.mp4" />
+          </video>
+        </section> -->
+
+        <footer>
+        <table>
+          <tr>
+            <td>
+              <span><strong>Address</strong></span>
+              <br>Vancho Nikosli Bbr
+              <br>Ohrid Macedonia 6000
+              <p>
+              <span> <strong>Contact</strong></span>
+              <br><strong>Phone</strong> (389) 75521381
+              <br><strong>Fax</strong>  (47) 508567733
+              <br><strong>Email: </strong><a class="hyperlink" href="mailto:Christomzy11@gmail.com">Christomzy11@gmail.com</a> 
+              </p>
+            </td>
+        
+        
+            <td>
+              <span><strong>Hours Pharmacy</strong></span>
+              <br>Monday- Friday: 9am - 9pm
+              <br>Saturday: 9am - 6pm
+              <br>Sunday & Holidays: 9am - 2pm
+            </td>
+            <td>
+              <strong>Joshua-Chris Pharmacy
+                guarantees quality and personal care for all your health and prescription needs.
+                Our dedication to customers begins with
+                the promise that your prescription will be filled promptly and that you will be personally consulted by one of our staff pharmacists each visit.
+                Further, you will receive written patient information regarding each and every medication we dispense.
+              </strong>
+        
+            </td>
      
-     </section>
-    </body>
-      <table>
-       <tr>
-          <td>
-         <span><strong>Address</strong></span>
-          <br>
-          Vancho Nikosli Bbr
-          <br>
-          Ohrid Macedonia 6000
-          
-          <p>
-         <span> <strong>Contact</strong></span>
-          <br><strong>Phone</strong> (389) 75521381
-          <br><strong>Fax</strong>  (47) 508567733
-          <br><strong>Email</strong><a class="hyperlink" href="mailto:Christomzy11@gmail.com">Christomzy11@gmail.com</a>   
-          </p>
-          </td>
-          
-          
-          <td>
-          <span><strong>Hours Pharmacy</strong></span>
-          <br>Monday- Friday: 9am - 9pm
-          <br>Saturday: 9am - 6pm
-          <br>Sunday & Holidays: 9am - 2pm
-          </td>
-          <td>
-          <strong>Joshua-Chris Pharmacy
-     guarantees quality and personal care for all your health and prescription needs.
-     Our dedication to customers begins with
-      the promise that your prescription will be filled promptly and that you will be personally consulted by one of our staff pharmacists each visit.
-      Further, you will receive written patient information regarding each and every medication we dispense.
-          </strong>
-          
-          </td>
-       
-       </tr>
-       
-       </table>
-       
-     
-      <footer>
-      Joshua-Chris pharmacy 2017 all rights Reserved
-      
-      </footer>
-    </body>
+          </tr>
+        </table>
+          Joshua-Chris pharmacy 2017 all rights Reserved
+        </footer>
+
+      </body>
     </div>
-    </html>
+</html>
